@@ -168,7 +168,9 @@ Modifier le système pour :
 ## 🔁 Mise à jour des règles
 
 * un message est toujours lié à son créateur
+* tous les utilisateurs peuvent lire les messages publics
 * seuls les utilisateurs connectés peuvent créer un message
+* seuls les utilisateurs connectés peuvent lire un message a lecture unique
 
 ---
 
