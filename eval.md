@@ -67,7 +67,7 @@ Créer une ressource **Message**.
 ### Fonctionnalités
 
 * créer un message
-* récupérer la liste des messages
+* récupérer la liste des messages (si vous y arrivez, sinon tous les messages)
 * récupérer un message par son id
 
 ---
@@ -113,12 +113,16 @@ Vous pouvez décider de quel type un message est par défaut.
 Lorsqu’un message `lecture_unique` est consulté :
 
 * il est renvoyé au client
-* puis immédiatement supprimé
+* immédiatement supprimé
+
+A vous de voir l'ordre utile pour réaliser cette fonctionnalité.
 
 ### Attendu
 
 * première lecture → OK
 * deuxième lecture → erreur (404 ou équivalent)
+
+Attention : Les messages de type `lecture_unique`ne doivent pas être renvoyés avec la totalité des messages.
 
 ---
 
@@ -261,7 +265,9 @@ Chaque utilisateur possède un rôle :
 # 🧪 **Livrables attendus**
 
 * API fonctionnelle
-* routes testables (Postman / Insomnia)
+* routes testables (Postman / Insomnia) :
+  * soit le fichier JSON d'export
+  * soit une capture d'écran de POSTMAN ou autre avec les routes de test.
 * structure claire :
 
   * routes
